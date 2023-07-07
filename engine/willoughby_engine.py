@@ -3,5 +3,5 @@ class WilloughbyEngine(Engine):
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
 
-    def needs_service():
+    def needs_service(self):
         return self.current_mileage - self.last_service_mileage > 60000
