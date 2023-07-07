@@ -4,5 +4,5 @@ class Car(Serviceable):
         battery = Battery
         
     @abstractmethod
-    def needs_service():
+    def needs_service(self):
         return engine.needs_service() or battery.needs_service()
