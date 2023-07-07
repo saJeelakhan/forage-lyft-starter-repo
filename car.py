@@ -5,4 +5,4 @@ class Car(Serviceable):
         
     @abstractmethod
     def needs_service():
-
+        return engine.needs_service() and battery.needs_service()
